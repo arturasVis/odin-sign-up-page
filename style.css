@@ -18,7 +18,7 @@ body{
 }
 #sidebar{
     height: var(--page_height);
-    background:#ffff url("/imgs/background.avif") no-repeat left top;
+    background:#ffff url("./imgs/background.avif") no-repeat left top;
     background-size: cover;
     flex: 1 2;
 }
