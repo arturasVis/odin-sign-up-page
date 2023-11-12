@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="sidebar">
+        <div id="logo"><img src="./imgs/odin-lined.png"><span id="logo_txt">Odin</span></div>
+    </div>
+    <div id="content">
+        <div id="head">
+            <h1>This is not a real online service! You know you need something like this in your life to
+                help you realize your deepest dreams.Sign up now to get started.
+            </h1>
+            <h1>
+                You <i>know</i> you want to.
+            </h1>
+        </div>
+        <div>
+            <form action="/post.txt" method="post" onsubmit="return validate()">
+                
+
+                    <fieldset>
+                        <div>
+                            <h1>Let's do this!</h1>
+                        </div>
+                        <div class="fields">
+                            
+                            <div class="field">
+                                <label for="first_name">First name:</label>
+                                <input type="text" id="first_name" name="firstName" required>
+                            </div>
+                            <div class="field">
+                                <label for="last_name">Last name</label>
+                                <input type="text" id="last_name" name="lastName" required>
+                            </div>
+                            <div class="field">
+                                <label for="email">Email</label>
+                                <input type="email" name="email_adress" id="email" required>
+                            </div >
+                            <div class="field">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone_number" minlength="10" maxlength="11" >
+                            </div>
+                            <div class="field">
+                                <label for="password_first">Password</label>
+                                <input type="password" name="first_password" id="password_first">
+                                <span id="error"></span>
+                            </div>
+                            <div class="field">
+                                <label for="password_second">Confirm Password</label>
+                                <input type="password" name="second_password" id="password_second">
+                            </div>
+                        </div>
+                    </fieldset>
+                <div class="button_container">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account?<a href="" id="login_button">Log in</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
